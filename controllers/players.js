@@ -1,5 +1,5 @@
 import Player from '../models/Player.js'
-import bcrypt from 'bcryptjs'
+import bcryptjs from 'bcryptjs'
 
 export const getPlayers = async (req, res) => {
     try {
