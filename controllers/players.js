@@ -40,7 +40,7 @@ export const updatePlayer = async (req, res) => {
     try {
         const filter = {_id: req.params.id }
         const { firstName, lastName, email, password } = req.body
-        const salt = await bcryptjs.gensalt()
+        const salt = await bcryptjs.genSalt()
         const encryptedPassword = await bcryptjs.hash(password, salt)
         
         const update = {
